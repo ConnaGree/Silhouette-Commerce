@@ -61,13 +61,13 @@ export const flashSaleProducts = [
     },
     {
         id: 3,
-        title: "AK-900 Wired Keyboard",
+        title: "IPS LCD Gaming Monitor",
         regularPrice: 1160,
         salePrice: 960,
     },
     {
         id: 4,
-        title: "AK-900 Wired Keyboard",
+        title: "S-Series Comfort Chair ",
         regularPrice: 1160,
         salePrice: 960,
     },
@@ -77,35 +77,118 @@ export const flashSaleProducts = [
         regularPrice: 1160,
         salePrice: 960,
     },
+    
+]
+
+export const bestSelling = [
+    {
+        id: 1,
+        title: "The north coat",
+        regularPrice: 160,
+        salePrice: 120,
+        img: joystick_2
+    },
+    {
+        id: 2,
+        title: "Gucci duffle bag",
+        regularPrice: 160,
+        salePrice: 120,
+        img: joystick_2
+    },
+    {
+        id: 3,
+        title: "RGB liquid CPU Cooler",
+        regularPrice: 160,
+        salePrice: 120,
+        img: joystick_2
+    },
+    {
+        id: 4,
+        title: "Small BookSelf",
+        regularPrice: 160,
+        salePrice: 120,
+        img: joystick_2
+    },
+]
+
+export const clearanceDate = [
+    {
+        time: 23,
+        desc: "Hours"
+    },
+    {
+        time: 5,
+        desc: "Days"
+    },
+    {
+        time: 59,
+        desc: "Minutes"
+    },
+    {
+        time: 35,
+        desc: "Seconds"
+    },
+
+]
+
+export const exploreProducts = [
+    {
+        id: 1,
+        title: "The north coat",
+        regularPrice: 160,
+        salePrice: 120,
+        img: joystick_2
+    },
+    {
+        id: 2,
+        title: "CANON EOS DSLR Camera",
+        regularPrice: 160,
+        salePrice: 120,
+        img: joystick_2
+    },
+    {
+        id: 3,
+        title: "ASUS FHD Gaming Laptop",
+        regularPrice: 160,
+        salePrice: 120,
+        img: joystick_2
+    },
+    {
+        id: 4,
+        title: "Curology Product Set ",
+        regularPrice: 160,
+        salePrice: 120,
+        img: joystick_2
+    },
+    {
+        id: 5,
+        title: "Kids Electric Car",
+        regularPrice: 160,
+        salePrice: 120,
+        img: joystick_2
+    },
     {
         id: 6,
-        title: "AK-900 Wired Keyboard",
-        regularPrice: 1160,
-        salePrice: 960,
+        title: "Jr. Zoom Soccer Cleats",
+        regularPrice: 160,
+        salePrice: 120,
+        img: joystick_2
     },
     {
         id: 7,
-        title: "AK-900 Wired Keyboard",
-        regularPrice: 1160,
-        salePrice: 960,
+        title: "GP11 Shooter USB Gamepad",
+        regularPrice: 160,
+        salePrice: 120,
+        img: joystick_2
     },
     {
         id: 8,
-        title: "AK-900 Wired Keyboard",
-        regularPrice: 1160,
-        salePrice: 960,
+        title: "Quilted Satin Jacket",
+        regularPrice: 160,
+        salePrice: 120,
+        img: joystick_2
     },
-    {
-        id: 9,
-        title: "AK-900 Wired Keyboard",
-        regularPrice: 1160,
-        salePrice: 960,
-    },
-    {
-        id: 10,
-        title: "AK-900 Wired Keyboard",
-        regularPrice: 1160,
-        salePrice: 960,
-    },
-    
 ]
+
+
+
