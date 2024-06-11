@@ -1,4 +1,4 @@
-import {amazon__gadget, camera, chair, cleats, cpu_cooler, desktop, dog_food, gucci_bag,
+import {amazon, camera, chair, cleats, cpu_cooler, desktop, dog_food, gucci_bag,
          gucci_perfume, iphone, jacket, joystick_2, joystick, keyboard, laptop, ps5,
          ps5_1, ps5_2, ps5_3, ps5_4, rain_coat, shelf, speaker, toy_car, woman
         } from '../assets';
@@ -9,17 +9,13 @@ export const navLinks = [
         title: 'Home'
     },
     {
-        id: 'about',
-        title: 'About'
-    },
-    {
-        id: 'sign up',
-        title: 'Sign Up'
-    },
-    {
         id: 'contact',
         title: 'Contact'
-    }
+    },
+    {
+        id: 'signup',
+        title: 'Sign Up'
+    },
 ]
 
 export const categories = [
