@@ -47,31 +47,40 @@ export const flashSaleProducts = [
         title: "HAVIT HV-G92 Gamepad",
         regularPrice: 160,
         salePrice: 120,
-        img: joystick_2
+        img: joystick_2,
+        discount: "-40%"
     },
     {
         id: 2,
         title: "AK-900 Wired Keyboard",
         regularPrice: 1160,
         salePrice: 960,
+        img: keyboard,
+        disount: "-35%",
     },
     {
         id: 3,
         title: "IPS LCD Gaming Monitor",
         regularPrice: 1160,
         salePrice: 960,
+        img: desktop,
+        discount: "-30%",
     },
     {
         id: 4,
         title: "S-Series Comfort Chair ",
         regularPrice: 1160,
         salePrice: 960,
+        img: chair,
+        discount: "-25"
     },
     {
         id: 5,
         title: "AK-900 Wired Keyboard",
         regularPrice: 1160,
         salePrice: 960,
+        img: keyboard,
+        disount: "-35%",
     },
     
 ]
