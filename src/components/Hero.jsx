@@ -3,8 +3,8 @@ import { apple, iphone } from "../assets";
 
 const Hero = () => {
   return (
-    <div className="flex justify-between lg:px-[5rem] px-[2rem]">
-      <div className="left__section border-r-[1px] w-[25%] pt-10">
+    <div className="flex justify-between md:px-[5rem] px-0">
+      <div className="left__section hidden md:flex border-r-[1px] w-[25%] pt-10">
         <ul>
           {categories.map((link, index) => (
             <li
@@ -19,9 +19,9 @@ const Hero = () => {
         </ul>
       </div>
 
-      <div className="right__section w-[70%]  pt-10">
-        <div className="banner__container flex justify-between bg-black p-[4rem]">
-          <div className="banner__left w-[48%] text-white">
+      <div className="right__section w-full lg:w-[75%] p-0  lg:pt-10 lg:pl-10">
+        <div className="banner__container flex flex-col md:flex-row justify-between bg-black p-[2rem] lg:p-[4rem]">
+          <div className="banner__left w-full lg:w-[48%] text-white">
             <span className="flex text-[.9rem] gap-4 items-center">
               <img src={apple} alt={apple} /> iPhone 14 Series
             </span>
@@ -32,7 +32,7 @@ const Hero = () => {
               Shop Now
             </a>
           </div>
-          <div className="banner__right w-[48%] flex flex-end">
+          <div className="banner__right w-full mt-8 lg:mt-0 lg:w-[48%] flex flex-end">
             <img src={iphone} alt="iphone" />
           </div>
         </div>

@@ -7,3 +7,46 @@
 body {
   font-family: "Poppins", sans-serif;
 }
+
+.days, .hours,
+.minutes, .seconds {
+  position: relative;
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.days::before {
+  content: "Days";
+  position: absolute;
+  top: -5px;
+  left: 0;
+  font-size: .5rem;
+  font-weight: 500;
+}
+
+.hours::before {
+  content: "Hours";
+  position: absolute;
+  top: -5px;
+  left: 0;
+  font-size: .5rem;
+  font-weight: 500;
+}
+
+.minutes::before {
+  content: "Minutes";
+  position: absolute;
+  top: -5px;
+  left: 0;
+  font-size: .5rem;
+  font-weight: 500;
+}
+
+.seconds::before {
+  content: "Seconds";
+  position: absolute;
+  top: -5px;
+  left: 0;
+  font-size: .5rem;
+  font-weight: 500;
+}

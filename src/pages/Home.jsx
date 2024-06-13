@@ -1,9 +1,10 @@
-import { Hero } from "../components"
+import { Hero, FlashSale } from "../components"
 
 const Home = () => {
   return (
     <div>
       <Hero />
+      <FlashSale />
     </div>
   )
 }
