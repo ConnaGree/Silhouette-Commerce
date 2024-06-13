@@ -8,19 +8,21 @@ import {default as FlashSale} from './FlashSale'
 import { default as Navbar } from "./Navbar";
 import { default as NewArrivals} from "./NewArrivals";
 import { default as Footer} from "./Footer";
+import { default as ProductCard } from "./ProductCard";
 import { default as Deliverybox } from "./Deliverybox";
 
 
 export {
-    Hero,
-    Banner,
-    BestSelling,
-    Categories,
-    Explore,
-    Features,
-    FlashSale,
-    Navbar,
-    NewArrivals,
-    Footer,
-    Deliverybox
-}
+  Hero,
+  Banner,
+  BestSelling,
+  Categories,
+  Explore,
+  Features,
+  FlashSale,
+  Navbar,
+  NewArrivals,
+  Footer,
+  Deliverybox,
+  ProductCard
+};
