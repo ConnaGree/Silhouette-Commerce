@@ -56,7 +56,7 @@ const scrollRight = () => {
 };
 
   return (
-    <div className="md:px-[5rem] mt-[1rem] px-[1rem] py-[4rem] lg:mt-[5rem]">
+    <div className="md:px-[5rem] mt-[1rem] px-[1rem] py-[4rem] lg:mt-[3rem]">
       <div className="top__flash-sale flex justify-between items-start">
         <div className="">
           <div className="top__widget text-[1rem] font-[600] text-[#db4444] flex items-center gap-3 mb-3">
@@ -76,7 +76,7 @@ const scrollRight = () => {
             </div>
           </div>
         </div>
-        <div className="left__right-scroller flex items-center gap-3">
+        <div className="left__right-scroller md:flex hidden items-center gap-3">
           <span onClick={scrollLeft} className="w-[50px] h-[50px] rounded-[50%] bg-[#f5f5f5] flex items-center justify-center cursor-pointer">
             <GoArrowLeft />
           </span>
@@ -86,7 +86,7 @@ const scrollRight = () => {
         </div>
       </div>
 
-      <div ref={galleryRef} className="flash__sale-products overflow-x-auto scroll-smooth scrollbar-hide lg:mt-[1.5rem] mt-[1rem] flex gap-5 flex-wrap lg:flex-nowrap items-start">
+      <div ref={galleryRef} className="flash__sale-products overflow-x-auto scroll-smooth scrollbar-hide lg:mt-[1.5rem] mt-[1rem] flex gap-5 lg:flex-nowrap items-start">
         {flashSaleProducts.map((product, index) => (
           <ProductCard productDetail={product} key={index} />
         ))}

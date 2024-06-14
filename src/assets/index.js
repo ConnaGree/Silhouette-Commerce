@@ -24,6 +24,12 @@ import toy_car from "./toy_car.png";
 import woman from "./woman.png";
 import laptop from "./laptop.png";
 import apple from './apple.png'
+import CameraIcon from './CameraIcon.png'
+import CellPhone from './CellPhone.png'
+import Computer from './Computer.png'
+import Headphone from './Headphone.png'
+import SmartWatch from './SmartWatch.png'
+import Gamepad from './Gamepad.png'
 
 export {
   amazon,
@@ -52,4 +58,10 @@ export {
   gucci_perfume,
   iphone,
   laptop,
+  CameraIcon,
+  Gamepad,
+  CellPhone,
+  Computer,
+  Headphone,
+  SmartWatch,
 };
