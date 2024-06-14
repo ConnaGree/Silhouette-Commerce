@@ -56,7 +56,7 @@ const scrollRight = () => {
 };
 
   return (
-    <div className="md:px-[5rem] mt-[1rem] px-[1rem] py-[4rem] lg:mt-[3rem]">
+    <div className="md:px-[5rem] mt-[1rem] px-[2rem] py-[2rem] lg:mt-[3rem]">
       <div className="top__flash-sale flex justify-between items-start">
         <div className="">
           <div className="top__widget text-[1rem] font-[600] text-[#db4444] flex items-center gap-3 mb-3">
