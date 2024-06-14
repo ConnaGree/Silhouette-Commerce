@@ -24,6 +24,12 @@ import {
   speaker,
   toy_car,
   woman,
+  SmartWatch,
+  Headphone,
+    CellPhone,
+    CameraIcon,
+    Computer,
+    Gamepad
 } from "../assets";
 
 export const navLinks = [
@@ -83,7 +89,7 @@ export const flashSaleProducts = [
     img: keyboard,
     discount: "-35%",
     tot_rating: 75,
-    rating: 5,
+    rating: 4,
   },
   {
     id: 3,
@@ -103,7 +109,7 @@ export const flashSaleProducts = [
     img: chair,
     discount: "-25%",
     tot_rating: 99,
-    rating: 5,
+    rating: 4,
   },
   {
     id: 5,
@@ -124,7 +130,7 @@ export const flashSaleProducts = [
     img: keyboard,
     discount: "-35%",
     tot_rating: 64,
-    rating: 5,
+    rating: 4,
   },
   {
     id: 5,
@@ -144,7 +150,7 @@ export const flashSaleProducts = [
     img: keyboard,
     discount: "-35%",
     tot_rating: 64,
-    rating: 5,
+    rating: 4,
   },
   {
     id: 5,
@@ -188,6 +194,39 @@ export const bestSelling = [
     img: joystick_2,
   },
 ];
+
+export const categoryItems = [
+    {
+        id: 1, 
+        title: "Phones",
+        icon: CellPhone,
+    },
+    {
+        id: 2, 
+        title: "Computers",
+        icon: Computer,
+    },
+    {
+        id: 3, 
+        title: "SmartWatchs",
+        icon: SmartWatch,
+    },
+    {
+        id: 4, 
+        title: "Cameras",
+        icon: CameraIcon,
+    },
+    {
+        id: 5, 
+        title: "HeadPhones",
+        icon: Headphone,
+    },
+    {
+        id: 6, 
+        title: "Gaming",
+        icon: Gamepad,
+    }
+]
 
 export const clearanceDate = [
   {
