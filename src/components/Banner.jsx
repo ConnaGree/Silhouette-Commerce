@@ -15,7 +15,7 @@ const Banner = () => {
         </button>
       </div>
       <div className="right__section">
-        <img className="speaker__img" src={speaker} alt="speaker" />
+        <img className="speaker__img bg-radial-g" src={speaker} alt="speaker" />
       </div>
     </div>
   );
