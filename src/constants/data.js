@@ -240,24 +240,6 @@ export const categoryItems = [
     }
 ]
 
-export const clearanceDate = [
-  {
-    time: 23,
-    desc: "Hours",
-  },
-  {
-    time: 5,
-    desc: "Days",
-  },
-  {
-    time: 59,
-    desc: "Minutes",
-  },
-  {
-    time: 35,
-    desc: "Seconds",
-  },
-];
 
 export const exploreProducts = [
   {
@@ -265,42 +247,60 @@ export const exploreProducts = [
     title: "The north coat",
     regularPrice: 160,
     salePrice: 120,
-    img: joystick_2,
+    img: rain_coat,
+    tot_rating: 300,
+    rating: 3,
+    discount: "-50%",
   },
   {
     id: 2,
     title: "CANON EOS DSLR Camera",
     regularPrice: 160,
     salePrice: 120,
-    img: joystick_2,
+    img: camera,
+    tot_rating: 300,
+    rating: 4,
+    discount: "-50%",
   },
   {
     id: 3,
     title: "ASUS FHD Gaming Laptop",
     regularPrice: 160,
     salePrice: 120,
-    img: joystick_2,
+    img: laptop,
+    tot_rating: 300,
+    rating: 2,
+    discount: "-50%",
   },
   {
     id: 4,
     title: "Curology Product Set ",
     regularPrice: 160,
     salePrice: 120,
-    img: joystick_2,
+    img: dog_food,
+    tot_rating: 300,
+    rating: 4,
+    discount: "-50%",
   },
   {
     id: 5,
     title: "Kids Electric Car",
     regularPrice: 160,
     salePrice: 120,
-    img: joystick_2,
+    img: toy_car,
+    tot_rating: 300,
+    rating: 2,
+    discount: "-50%",
   },
   {
     id: 6,
     title: "Jr. Zoom Soccer Cleats",
     regularPrice: 160,
     salePrice: 120,
-    img: joystick_2,
+    img: cleats,
+    tot_rating: 300,
+    rating: 3,
+    discount: "-50%",
   },
   {
     id: 7,
@@ -308,12 +308,50 @@ export const exploreProducts = [
     regularPrice: 160,
     salePrice: 120,
     img: joystick_2,
+    tot_rating: 300,
+    rating: 5,
+    discount: "-50%",
   },
   {
     id: 8,
     title: "Quilted Satin Jacket",
     regularPrice: 160,
     salePrice: 120,
-    img: joystick_2,
+    img: jacket,
+    tot_rating: 300,
+    rating: 4,
+    discount: "-50%",
   },
 ];
+
+
+export const newArrivals = [
+  {
+    id: 1,
+    title: "PlayStation 5",
+    desc: "Black and White version of the PS5 coming out on sale.",
+    linkTitle: "Shop Now",
+    img: ps5
+  },
+  {
+    id: 2,
+    title: "Women’s Collections",
+    desc: "Featured woman collections that give you another vibe.",
+    linkTitle: "Shop Now",
+    img: woman,
+  },
+  {
+    id: 3,
+    title: "Speakers",
+    desc: "Amazon wireless speakers",
+    linkTitle: "Shop Now",
+    img: amazon,
+  },
+  {
+    id: 4,
+    title: "Perfume",
+    desc: "GUCCI INTENSE OUD EDP",
+    linkTitle: "Shop Now",
+    img: gucci_perfume, 
+  },
+]

@@ -15,38 +15,67 @@ body {
   font-weight: 600;
 }
 
-.days::before {
-  content: "Days";
+.days::before,
+.hours::before,
+.minutes::before,
+.seconds::before {
   position: absolute;
   top: -10px;
   left: 0;
   font-size: .7rem;
   font-weight: 500;
+}
+
+.days::before {
+  content: "Days";
 }
 
 .hours::before {
   content: "Hours";
-  position: absolute;
-  top: -10px;
-  left: 0;
-  font-size: .7rem;
-  font-weight: 500;
 }
 
 .minutes::before {
   content: "Minutes";
-  position: absolute;
-  top: -10px;
-  left: 0;
-  font-size: .7rem;
-  font-weight: 500;
 }
 
 .seconds::before {
   content: "Seconds";
+}
+
+.banner__days, .banner__hours,
+.banner__minutes, .banner__seconds {
+  position: relative;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+
+.banner__days::before,
+.banner__hours::before,
+.banner__minutes::before,
+.banner__seconds::before {
   position: absolute;
-  top: -10px;
-  left: 0;
-  font-size: .7rem;
+  bottom: 5px;
+  left: 50%;
+  transform: translate(-50%, -5px);
+  font-size: .6rem;
   font-weight: 500;
+  color: #000;
+}
+
+
+.banner__days::before {
+  content: "Days";
+}
+
+.banner__hours::before {
+  content: "Hours";
+}
+
+.banner__minutes::before {
+  content: "Minutes";
+}
+
+.banner__seconds::before {
+  content: "Seconds";
 }

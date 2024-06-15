@@ -30,16 +30,23 @@ const ProductCard = ({ productDetail }) => {
           Br. {productDetail.regularPrice}
         </span>
       </div>
-      <p className="rating flex items-center gap-2 mt-2">
-        <div className="star__container flex gap-[.5px]">
-        {[1, 2, 3, 4, 5].map((star) => (
-                            <Star key={star} filled={productDetail.rating >= star || (productDetail.rating >= star - 0.5 && productDetail.rating < star)} />
-                        ))}
-        </div>
+      <span className="rating flex items-center gap-2 mt-2">
+        <span className="star__container flex gap-[.5px]">
+          {[1, 2, 3, 4, 5].map((star) => (
+            <Star
+              key={star}
+              filled={
+                productDetail.rating >= star ||
+                (productDetail.rating >= star - 0.5 &&
+                  productDetail.rating < star)
+              }
+            />
+          ))}
+        </span>
         <span className="total__sells text-[#7D8184] text-[.8rem]">
           ({productDetail.tot_rating})
         </span>
-      </p>
+      </span>
 
       <div className="product__controls absolute top-4 right-4 flex flex-col gap-y-1">
         <span className="w-[30px] h-[30px] flex items-center justify-center rounded-[50%] cursor-pointer bg-white">
@@ -53,12 +60,21 @@ const ProductCard = ({ productDetail }) => {
         </span>
       </div>
 
-      <div
-        className="discount__badge absolute px-2 py-2 rounded-[.3rem] top-4 left-4 bg-[#db4444] text-center text-white 
+      {productDetail.id === 2 || productDetail.id === 4 ? (
+        <div
+          className="new__badge absolute px-2 py-2 rounded-[.3rem] top-4 left-4 bg-secondaryAccent text-center text-white 
       text-[.7rem]"
-      >
-        {productDetail.discount}
-      </div>
+        >
+          <span>New</span>
+        </div>
+      ) : (
+        <div
+          className="discount__badge absolute px-2 py-2 rounded-[.3rem] top-4 left-4 bg-[#db4444] text-center text-white 
+      text-[.7rem]"
+        >
+          {productDetail.discount}
+        </div>
+      )}
     </div>
   );
 };
