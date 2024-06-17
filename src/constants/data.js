@@ -29,7 +29,10 @@ import {
     CellPhone,
     CameraIcon,
     Computer,
-    Gamepad
+    Gamepad,
+    support,
+    fast,
+    trust,
 } from "../assets";
 
 export const navLinks = [
@@ -353,5 +356,95 @@ export const newArrivals = [
     desc: "GUCCI INTENSE OUD EDP",
     linkTitle: "Shop Now",
     img: gucci_perfume, 
+  },
+]
+
+export const deliveryItems = [
+  {
+    id: 1,
+    img: fast,
+    title: "FREE AND FAST DELIVERY",
+    desc: "Free delivery for all orders over $140",
+  },
+  {
+    id: 2,
+    img: support,
+    title: "24/7 CUSTOMER SERVICE",
+    desc: "Friendly 24/7 customer support",
+  },
+  {
+    id: 3,
+    img: trust,
+    title: "MONEY BACK GUARANTEE",
+    desc: "We reurn money within 30 days",
+  },
+]
+
+export const footerLinks = [
+  {
+    id: 1,
+    linkTitle: "Support",
+    links: [
+      {
+        name: `111 Bijoy sarani, Dhaka`,
+        link: "",
+      },
+      {
+        name: "exclusive@gmail.com",
+        link: "#",
+      },
+      {
+        name: "+88015-88888-9999",
+        link: "#",
+      },
+    ],
+  },
+  {
+    id: 2,
+    linkTitle: "Account",
+    links: [
+      {
+        name: "My Account",
+        link: "",
+      },
+      {
+        name: "Login / Register",
+        link: "#",
+      },
+      {
+        name: "Cart",
+        link: "#",
+      },
+      {
+        name: "Wishlist",
+        link: "#",
+      },
+      {
+        name: "Shop",
+        link: "#",
+      },
+    ],
+  },
+  {
+    id: 3,
+    linkTitle: "Quick Links",
+    links: [
+      {
+        name: "Privacy Policy",
+        link: "#",
+      },
+      {
+        name: "Terms Of Use",
+        link: "#",
+      },
+      {
+        name: "FAQ",
+        link: "#",
+      },
+      {
+        name: "Contact",
+        link: "#",
+      },
+    ],
   },
 ]
