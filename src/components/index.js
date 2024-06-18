@@ -12,12 +12,14 @@ import { default as ProductCard } from "./ProductCard";
 import { default as Deliverybox } from "./Deliverybox";
 import {default as CategoryCard} from './CategoryCard'
 import { default as ArrivalCard} from "./ArrivalCard";
+import { default as CartTotal } from "./CartTotal";
 
 
 export {
   Hero,
   Banner,
   BestSelling,
+  CartTotal,
   Categories,
   Explore,
   Features,

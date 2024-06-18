@@ -1,16 +1,27 @@
-import { Hero, FlashSale, Categories, BestSelling, Banner, Explore, NewArrivals  } from "../components";
+import {
+  Hero,
+  FlashSale,
+  Categories,
+  BestSelling,
+  Banner,
+  Explore,
+  NewArrivals,
+  Features,
+} from "../components";
+import { useState } from "react";
 
-const Home = () => {
+const Home = ({ addToCart, cartItems }) => {
   return (
     <div>
       <Hero />
-      <FlashSale />
-      <Categories />
-      <BestSelling />
+      <FlashSale addToCart={addToCart} cartItems={cartItems} />
+      <Categories addToCart={addToCart} />
+      <BestSelling addToCart={addToCart} />
       <Banner />
-      <Explore />
+      <Explore addToCart={addToCart} />
       <NewArrivals />
+      <Features />
     </div>
-  )
-}
-export default Home
+  );
+};
+export default Home;
