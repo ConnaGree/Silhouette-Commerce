@@ -8,7 +8,11 @@ const Star = ({ filled }) => (
 );
 
 
-const ProductCard = ({ productDetail }) => {
+const ProductCard = ({ productDetail, addToCart, cartItems }) => {
+  const handleAddToCart = () => {
+    addToCart(productDetail)
+    console.log(cartItems)
+  }
 
   return (
     <div className="product__card relative flex-shrink-0 w-full sm:w-[210px]">
@@ -55,7 +59,7 @@ const ProductCard = ({ productDetail }) => {
         <span className="w-[30px] h-[30px] flex items-center justify-center rounded-[50%] cursor-pointer bg-white">
           <FiEye className="text-[1.1rem]" />
         </span>
-        <span className="w-[30px] h-[30px] flex items-center justify-center rounded-[50%] cursor-pointer bg-white">
+        <span onClick={handleAddToCart} className="w-[30px] h-[30px] flex items-center justify-center rounded-[50%] cursor-pointer bg-white">
           <LuShoppingCart className="text-[1.1rem]" />
         </span>
       </div>
