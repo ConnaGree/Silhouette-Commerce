@@ -1,18 +1,17 @@
 import { Hero, FlashSale, Categories, BestSelling, Banner, Explore, NewArrivals, Features  } from "../components";
-import { useState } from "react";
 
-const Home = ({addToCart, cartItems}) => {
+const Home = () => {
   return (
     <div>
       <Hero />
-      <FlashSale addToCart={addToCart} cartItems={cartItems}/>
-      <Categories addToCart={addToCart} />
-      <BestSelling addToCart={addToCart} />
+      <FlashSale />
+      <Categories />
+      <BestSelling />
       <Banner />
-      <Explore addToCart={addToCart}/>
+      <Explore />
       <NewArrivals />
       <Features />
     </div>
   )
 }
-export default Home;
+export default Home
