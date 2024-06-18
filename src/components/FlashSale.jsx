@@ -3,7 +3,7 @@ import { GoArrowRight, GoArrowLeft } from "react-icons/go";
 import ProductCard from "./ProductCard";
 import { flashSaleProducts } from "../constants/data";
 
-const FlashSale = ({addToCart, cartItems}) => {
+const FlashSale = () => {
 
   const targetDate = new Date("Jun 20, 2024 18:00:00").getTime();
   const [timeLeft, setTimeLeft] = useState(calculateTimeLeft(targetDate));
@@ -88,7 +88,7 @@ const scrollRight = () => {
 
       <div ref={galleryRef} className="flash__sale-products overflow-x-auto scroll-smooth scrollbar-hide lg:mt-[1.5rem] mt-[1rem] flex gap-5 lg:flex-nowrap items-start">
         {flashSaleProducts.map((product, index) => (
-          <ProductCard productDetail={product} addToCart={addToCart} cartItems={cartItems} key={index} />
+          <ProductCard productDetail={product} key={index} />
         ))}
       </div>
 
