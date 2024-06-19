@@ -30,6 +30,7 @@ import Computer from './Computer.png'
 import Headphone from './Headphone.png'
 import SmartWatch from './SmartWatch.png'
 import Gamepad from './Gamepad.png'
+
 import support from './support.png'
 import trust from './trust.png'
 import fast from './fast.png'
@@ -40,8 +41,11 @@ import appstore from './appstore.png'
 export {
   amazon,
   apple,
-  QrCode,
   appstore,
+  fast,
+  support,
+  trust,
+  QrCode,
   android,
   woman,
   toy_car,

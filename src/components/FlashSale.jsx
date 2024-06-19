@@ -3,8 +3,7 @@ import { GoArrowRight, GoArrowLeft } from "react-icons/go";
 import ProductCard from "./ProductCard";
 import { flashSaleProducts } from "../constants/data";
 
-const FlashSale = () => {
-
+const FlashSale = ({ addToCart, cartItems }) => {
   const targetDate = new Date("Jun 20, 2024 18:00:00").getTime();
   const [timeLeft, setTimeLeft] = useState(calculateTimeLeft(targetDate));
 
@@ -40,20 +39,19 @@ const FlashSale = () => {
     return { days, hours, minutes, seconds };
   }
 
+  const galleryRef = useRef(null);
 
-const galleryRef = useRef(null);
+  const scrollLeft = () => {
+    if (galleryRef.current) {
+      galleryRef.current.scrollBy({ left: -300, behavior: "smooth" });
+    }
+  };
 
-const scrollLeft = () => {
-  if (galleryRef.current) {
-    galleryRef.current.scrollBy({ left: -300, behavior: "smooth" });
-  }
-};
-
-const scrollRight = () => {
-  if (galleryRef.current) {
-    galleryRef.current.scrollBy({ left: 300, behavior: "smooth" });
-  }
-};
+  const scrollRight = () => {
+    if (galleryRef.current) {
+      galleryRef.current.scrollBy({ left: 300, behavior: "smooth" });
+    }
+  };
 
   return (
     <div className="md:px-[5rem] mt-[1rem] px-[2rem] py-[2rem] lg:mt-[3rem]">
@@ -77,18 +75,32 @@ const scrollRight = () => {
           </div>
         </div>
         <div className="left__right-scroller md:flex hidden items-center gap-3">
-          <span onClick={scrollLeft} className="w-[50px] h-[50px] rounded-[50%] bg-[#f5f5f5] flex items-center justify-center cursor-pointer">
+          <span
+            onClick={scrollLeft}
+            className="w-[50px] h-[50px] rounded-[50%] bg-[#f5f5f5] flex items-center justify-center cursor-pointer"
+          >
             <GoArrowLeft />
           </span>
-          <span onClick={scrollRight} className="w-[50px] h-[50px] rounded-[50%] bg-[#f5f5f5] flex items-center justify-center cursor-pointer">
+          <span
+            onClick={scrollRight}
+            className="w-[50px] h-[50px] rounded-[50%] bg-[#f5f5f5] flex items-center justify-center cursor-pointer"
+          >
             <GoArrowRight />
           </span>
         </div>
       </div>
 
-      <div ref={galleryRef} className="flash__sale-products overflow-x-auto scroll-smooth scrollbar-hide lg:mt-[1.5rem] mt-[1rem] flex gap-5 lg:flex-nowrap items-start">
+      <div
+        ref={galleryRef}
+        className="flash__sale-products overflow-x-auto scroll-smooth scrollbar-hide lg:mt-[1.5rem] mt-[1rem] flex gap-5 lg:flex-nowrap items-start"
+      >
         {flashSaleProducts.map((product, index) => (
-          <ProductCard productDetail={product} key={index} />
+          <ProductCard
+            productDetail={product}
+            addToCart={addToCart}
+            cartItems={cartItems}
+            key={index}
+          />
         ))}
       </div>
 

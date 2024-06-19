@@ -26,13 +26,13 @@ import {
   woman,
   SmartWatch,
   Headphone,
-    CellPhone,
-    CameraIcon,
-    Computer,
-    Gamepad,
-    support,
-    fast,
-    trust,
+  CellPhone,
+  CameraIcon,
+  Computer,
+  Gamepad,
+  support,
+  fast,
+  trust,
 } from "../assets";
 
 export const navLinks = [
@@ -211,38 +211,37 @@ export const bestSelling = [
 ];
 
 export const categoryItems = [
-    {
-        id: 1, 
-        title: "Phones",
-        icon: CellPhone,
-    },
-    {
-        id: 2, 
-        title: "Computers",
-        icon: Computer,
-    },
-    {
-        id: 3, 
-        title: "SmartWatchs",
-        icon: SmartWatch,
-    },
-    {
-        id: 4, 
-        title: "Cameras",
-        icon: CameraIcon,
-    },
-    {
-        id: 5, 
-        title: "HeadPhones",
-        icon: Headphone,
-    },
-    {
-        id: 6, 
-        title: "Gaming",
-        icon: Gamepad,
-    }
-]
-
+  {
+    id: 1,
+    title: "Phones",
+    icon: CellPhone,
+  },
+  {
+    id: 2,
+    title: "Computers",
+    icon: Computer,
+  },
+  {
+    id: 3,
+    title: "SmartWatchs",
+    icon: SmartWatch,
+  },
+  {
+    id: 4,
+    title: "Cameras",
+    icon: CameraIcon,
+  },
+  {
+    id: 5,
+    title: "HeadPhones",
+    icon: Headphone,
+  },
+  {
+    id: 6,
+    title: "Gaming",
+    icon: Gamepad,
+  },
+];
 
 export const exploreProducts = [
   {
@@ -327,14 +326,13 @@ export const exploreProducts = [
   },
 ];
 
-
 export const newArrivals = [
   {
     id: 1,
     title: "PlayStation 5",
     desc: "Black and White version of the PS5 coming out on sale.",
     linkTitle: "Shop Now",
-    img: ps5
+    img: ps5,
   },
   {
     id: 2,
@@ -355,7 +353,49 @@ export const newArrivals = [
     title: "Perfume",
     desc: "GUCCI INTENSE OUD EDP",
     linkTitle: "Shop Now",
-    img: gucci_perfume, 
+    img: gucci_perfume,
+  },
+];
+
+export const deliveryItems = [
+  {
+    id: 1,
+    img: fast,
+    title: "FREE AND FAST DELIVERY",
+    desc: "Free delivery for all orders over $140",
+  },
+  {
+    id: 2,
+    img: support,
+    title: "24/7 CUSTOMER SERVICE",
+    desc: "Friendly 24/7 customer support",
+  },
+  {
+    id: 3,
+    img: trust,
+    title: "MONEY BACK GUARANTEE",
+    desc: "We reurn money within 30 days",
+  },
+];
+
+export const footerLinks = [
+  {
+    id: 1,
+    linkTitle: "Support",
+    links: [
+      {
+        name: `111 Bijoy sarani, Dhaka`,
+        link: "",
+      },
+      {
+        name: "exclusive@gmail.com",
+        link: "#",
+      },
+      {
+        name: "+88015-88888-9999",
+        link: "#",
+      },
+    ],
   },
 ]
 
@@ -447,4 +487,4 @@ export const footerLinks = [
       },
     ],
   },
-]
+];

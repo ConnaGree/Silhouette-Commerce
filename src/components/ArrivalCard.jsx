@@ -1,5 +1,4 @@
-const ArrivalCard = ({cardDetail}) => {
-
+const ArrivalCard = ({ cardDetail }) => {
   return (
     <div className="bg-no-repeat relative w-full h-full border-[1px]">
       <img
@@ -16,5 +15,5 @@ const ArrivalCard = ({cardDetail}) => {
       </div>
     </div>
   );
-}
-export default ArrivalCard
+};
+export default ArrivalCard;

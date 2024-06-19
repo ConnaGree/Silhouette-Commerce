@@ -79,3 +79,21 @@ body {
 .banner__seconds::before {
   content: "Seconds";
 }
+
+
+.cart {
+  border: 1px solid #ccc;
+  padding: 16px;
+  margin: 16px;
+  border-radius: 0.5rem;
+}
+
+.cart, .cart__total {
+  width: 40%;
+}
+
+.cart__total {
+  /* background: #F7F7F7; */
+  padding: 2rem;
+  border-radius: .5rem;
+}

@@ -1,5 +1,6 @@
-import ArrivalCard from "./ArrivalCard"
-import { newArrivals } from "../constants/data"
+import ArrivalCard from "./ArrivalCard";
+import { newArrivals } from "../constants/data";
+
 
 const NewArrivals = () => {
   return (
@@ -24,5 +25,5 @@ const NewArrivals = () => {
       </div>
     </div>
   );
-}
-export default NewArrivals
+};
+export default NewArrivals;
