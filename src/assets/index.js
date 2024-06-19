@@ -77,7 +77,4 @@ export {
   Computer,
   Headphone,
   SmartWatch,
-  support,
-  trust,
-  fast,
 };

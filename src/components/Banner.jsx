@@ -28,7 +28,7 @@ const calculateTimeLeft = (targetTime) => {
 }
 
 const Banner = () => {
-  const targetTime = new Date("July 30, 2024 18:00:00").getTime();
+  const targetTime = new Date("July 23, 2024 18:00:00").getTime();
   const [timeLeft, setTimeLeft] = useState(calculateTimeLeft(targetTime));
 
 
