@@ -16,7 +16,7 @@ const Footer = () => {
           Get 10% off your first order
         </p>
         <label
-          className="flex rounded-[0.5rem] border-[2px] px-5 py-2 items-center justify-between bg-transparent"
+          className="flex rounded-[0.5rem] max-w-[300px] border-[2px] px-5 py-2 items-center justify-between bg-transparent"
           htmlFor=""
         >
           <input
