@@ -15,10 +15,10 @@ const Home = ({ addToCart, cartItems }) => {
     <div>
       <Hero />
       <FlashSale addToCart={addToCart} cartItems={cartItems} />
-      <Categories addToCart={addToCart} />
-      <BestSelling addToCart={addToCart} />
+      <Categories />
+      <BestSelling addToCart={addToCart} cartItems={cartItems} />
       <Banner />
-      <Explore addToCart={addToCart} />
+      <Explore addToCart={addToCart} cartItems={cartItems} />
       <NewArrivals />
       <Features />
     </div>

@@ -4,7 +4,7 @@ import ProductCard from "./ProductCard";
 import { useRef } from "react";
 
 
-const Explore = () => {
+const Explore = ({ addToCart, cartItems }) => {
 
   const galleryRef = useRef(null);
 
@@ -55,7 +55,12 @@ const Explore = () => {
         className="explore__products overflow-x-auto scroll-smooth scrollbar-hide lg:mt-[1.5rem] mt-[1rem] flex gap-5 lg:flex-nowrap items-start"
       >
         {exploreProducts.map((product, index) => (
-          <ProductCard productDetail={product} key={index} />
+          <ProductCard
+          productDetail={product}
+          addToCart={addToCart}
+          cartItems={cartItems}
+          key={index}
+        />
         ))}
       </div>
 

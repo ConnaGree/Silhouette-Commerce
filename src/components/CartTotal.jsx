@@ -8,16 +8,16 @@ const CartTotal = ({ cartItems }) => {
   );
 
   return (
-    <div className="cart__total bg-[#f9fbfd]">
+    <div className="cart__total mt-[1rem] bg-[#f9fbfd]">
       <h2 className="text-[1.2rem] font-[600]">CartTotal</h2>
       <div className="price__detail-container">
         <div className="price__container border-b-[0.5px] my-[1.2rem]">
-          <p className="final__price text-[.8rem] font-[600] pb-[.5rem] flex justify-between">
+          <p className="final__price text-[.8rem] pb-[.5rem] flex justify-between">
             Subtotal <span>Br {total__cost.toFixed(2)}</span>
           </p>
         </div>
         <div className="price__container border-b-[0.5px] my-[1.2rem]">
-          <p className="final__price text-[.8rem] font-[600] pb-[.5rem] flex justify-between">
+          <p className="final__price text-[.8rem] pb-[.5rem] flex justify-between">
             Total <span>Br {total__cost.toFixed(2)}</span>
           </p>
         </div>
