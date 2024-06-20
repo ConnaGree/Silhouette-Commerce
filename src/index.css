@@ -97,3 +97,8 @@ body {
   /* padding: 2rem; */
   border-radius: .5rem;
 }
+
+.fade-out {
+      transition: opacity 2s ease-out;
+      opacity: 0;
+}

@@ -1,7 +1,7 @@
 import { GoHeart, GoStar, GoStarFill } from "react-icons/go";
 import { LuShoppingCart } from "react-icons/lu";
 import { FiEye } from "react-icons/fi";
-import { useRef } from "react";
+import { useState } from "react";
 
 const Star = ({ filled }) => (
   <span>
@@ -14,9 +14,14 @@ const Star = ({ filled }) => (
 );
 
 const ProductCard = ({ productDetail, addToCart, cartItems }) => {
+  const [showNotification, setShowNotification] = useState(false);
+
   const handleAddToCart = () => {
     addToCart(productDetail);
-    console.log(cartItems);
+    setShowNotification(true);
+    setTimeout(() => {
+      setShowNotification(false);
+    }, 2000);
   };
 
   return (
@@ -87,6 +92,14 @@ const ProductCard = ({ productDetail, addToCart, cartItems }) => {
           {productDetail.discount}
         </div>
       )}
+
+      <div
+        className={`absolute bg-white px-[.4rem] py-2 rounded-[50px] flex items-center justify-center w-[150px] top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] ${
+          showNotification ? "opacity-100" : "opacity-0"
+        }`}
+      >
+        <h2 className="text-[.8rem] font-[600]">Added to Cart!</h2>
+      </div>
     </div>
   );
 };
