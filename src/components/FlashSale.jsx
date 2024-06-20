@@ -4,7 +4,7 @@ import ProductCard from "./ProductCard";
 import { flashSaleProducts } from "../constants/data";
 
 const FlashSale = ({ addToCart, cartItems }) => {
-  const targetDate = new Date("Jun 20, 2024 18:00:00").getTime();
+  const targetDate = new Date("Jul 23, 2024 18:00:00").getTime();
   const [timeLeft, setTimeLeft] = useState(calculateTimeLeft(targetDate));
 
   useEffect(() => {

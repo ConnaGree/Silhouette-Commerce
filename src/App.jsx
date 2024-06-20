@@ -34,7 +34,7 @@ function App() {
         {/* Route for Contact */}
         <Route exact path="/contact" element={<Contact />} />
         {/* Route for Cart */}
-        <Route exact path="/cart" element={<Cart cartItems={cartItems} />} />
+        <Route exact path="/cart" element={<Cart cartItems={cartItems} setCartItems={setCartItems} />} />
         {/* Route for Wishlist */}
         <Route exact path="/wishlist" element={<Wishlist />} />
         {/* Route for SignUp */}
