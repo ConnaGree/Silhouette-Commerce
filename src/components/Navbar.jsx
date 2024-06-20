@@ -82,6 +82,7 @@ const Navbar = ({ cartItems }) => {
               className="text-[.9rem] text-white"
               to={index === 0 ? "/" : `/${link.id}`}
               key={index}
+              onClick={() => setToggle(!toggle)}
             >
               {link.title}
             </Link>
