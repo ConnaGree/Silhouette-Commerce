@@ -1,7 +1,7 @@
 import ProductCard from "./ProductCard";
 import { bestSelling } from "../constants/data";
 
-const BestSelling = () => {
+const BestSelling = ({addToCart, addToWishList}) => {
   return (
     <div className="md:px-[5rem] mt-[1rem] px-[2rem] py-[2rem] lg:mt-[3rem]">
       <div className="best__selling flex flex-col">
@@ -14,7 +14,7 @@ const BestSelling = () => {
 
       <div className="bestseller__products overflow-x-auto scroll-smooth scrollbar-hide lg:mt-[1.5rem] mt-[1rem] flex gap-5 lg:flex-nowrap items-start">
         {bestSelling.map((product, index) => (
-          <ProductCard productDetail={product} key={index} />
+          <ProductCard productDetail={product} addToWishList={addToWishList} addToCart={addToCart} key={index} />
         ))}
       </div>
     </div>

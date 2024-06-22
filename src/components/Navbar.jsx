@@ -5,8 +5,9 @@ import { LuShoppingCart } from "react-icons/lu";
 import { HiOutlineMenuAlt3 } from "react-icons/hi";
 import { LiaTimesSolid } from "react-icons/lia";
 import { useState, useEffect } from "react";
+import { Wishlist } from "../pages";
 
-const Navbar = ({ cartItems }) => {
+const Navbar = ({ cartItems, wishListItems }) => {
   const [toggle, setToggle] = useState(false);
   const [prodCounter, setProdCounter] = useState(0); // Controls the total number of products in the cart
 
@@ -57,9 +58,13 @@ const Navbar = ({ cartItems }) => {
         <Link to="/wishlist">
           <span className="cursor-pointer relative text-[1.2rem]">
             <GoHeart />
-            <span className="num__wishlist-items absolute rounded-[50%] flex items-center justify-center bg-accent text-white text-[.5rem] font-[600] w-[20px] h-[20px] top-[-10px] right-[-10px]">
-              0
-            </span>
+            {wishListItems.length ? (
+              <span className="num__wishlist-items absolute rounded-[50%] flex items-center justify-center bg-accent text-white text-[.5rem] font-[600] w-[20px] h-[20px] top-[-10px] right-[-10px]">
+                {wishListItems.length}
+              </span>
+            ) : (
+              ""
+            )}
           </span>
         </Link>
         <Link to="/cart">
@@ -77,7 +82,7 @@ const Navbar = ({ cartItems }) => {
       </div>
 
       {/* Mobile Menu */}
-      <div className="mobile__menu lg:hidden flex">
+      <div className="mobile__menu lg:hidden flex z-[1000]">
         <div className="toggle">
           <span onClick={() => setToggle((prev) => !prev)}>
             {toggle ? (
@@ -105,15 +110,19 @@ const Navbar = ({ cartItems }) => {
           ))}
 
           <div className="flex gap-[2rem] mt-[1rem]">
-            <Link to="/wishlist">
-              <span className="cursor-pointer text-white relative text-[1.2rem]">
+            <Link to="/wishlist" onClick={() => setToggle(!toggle)}>
+              <span className="cursor-pointer relative text-white text-[1.2rem]">
                 <GoHeart />
-                <span className="num__wishlist-items absolute rounded-[50%] flex items-center justify-center bg-accent text-white text-[.5rem] font-[600] w-[20px] h-[20px] top-[-10px] right-[-10px]">
-                  0
-                </span>
+                {wishListItems.length ? (
+                  <span className="num__wishlist-items absolute rounded-[50%] flex items-center justify-center bg-accent text-white text-[.5rem] font-[600] w-[20px] h-[20px] top-[-10px] right-[-10px]">
+                    {wishListItems.length}
+                  </span>
+                ) : (
+                  ""
+                )}
               </span>
             </Link>
-            <Link to="/cart">
+            <Link to="/cart" onClick={() => setToggle(!toggle)}>
               <span className="cursor-pointer text-white relative text-[1.2rem]">
                 <LuShoppingCart />
                 {cartItems.length ? (

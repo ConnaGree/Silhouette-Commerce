@@ -4,6 +4,7 @@
 @tailwind components;
 @tailwind utilities;
 
+
 body {
   font-family: "Poppins", sans-serif;
 }
@@ -101,4 +102,27 @@ body {
 .fade-out {
       transition: opacity 2s ease-out;
       opacity: 0;
+}
+
+.like__heart {
+  top: 20%;
+  left: 40%;
+  /* transform: translate(-50%, -50%); */
+}
+
+
+
+@keyframes pop-up {
+  0% {
+    transform: scale(0);
+    opacity: 0;
+  }
+  50% {
+    transform: scale(1.2);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
 }
