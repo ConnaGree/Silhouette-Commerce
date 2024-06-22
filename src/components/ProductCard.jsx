@@ -1,4 +1,4 @@
-import { GoHeart, GoStar, GoStarFill } from "react-icons/go";
+import { GoHeart, GoStarFill, GoHeartFill } from "react-icons/go";
 import { LuShoppingCart } from "react-icons/lu";
 import { FiEye } from "react-icons/fi";
 import { useState } from "react";
@@ -13,8 +13,9 @@ const Star = ({ filled }) => (
   </span>
 );
 
-const ProductCard = ({ productDetail, addToCart, cartItems }) => {
+const ProductCard = ({ productDetail, addToCart, addToWishList }) => {
   const [showNotification, setShowNotification] = useState(false);
+  const [showHeart, setShowHeart] = useState(false)
 
   const handleAddToCart = () => {
     addToCart(productDetail);
@@ -24,14 +25,34 @@ const ProductCard = ({ productDetail, addToCart, cartItems }) => {
     }, 2000);
   };
 
+  const handleAddToWishList = () => {
+    addToWishList(productDetail);
+    setShowHeart(true);
+    setTimeout(() => {
+      setShowHeart(false)
+    }, 2000)
+  }
+
   return (
     <div className="product__card relative flex-shrink-0 w-full sm:w-[210px]">
-      <div className="img__container rounded-[.5rem] flex items-center justify-center bg-[#f5f5f5] w-full h-[200px]">
+      <div className="img__container relative overflow-hidden rounded-[.5rem] flex items-center justify-center bg-[#f5f5f5] w-full h-[200px]">
         <img
           src={productDetail.img}
           className="object-contain w-[100px]"
           alt={productDetail.title}
         />
+        {/* Like Button Animation */}
+
+        {showHeart && (
+          <div className="absolute w-full h-full top-0 left-0">
+            <div
+              className="w-full h-full backdrop-blur-md like__heart text-[#db4444] top-0 left-0 text-[5rem] flex items-center justify-center"
+              style={{ animation: "pop-up 0.5s ease-out" }} // Apply the pop-up animation
+            >
+              <GoHeartFill />
+            </div>
+          </div>
+        )}
       </div>
       <p className="prod__title font-[600] mt-3 text-[1rem]">
         {productDetail.title}
@@ -63,7 +84,10 @@ const ProductCard = ({ productDetail, addToCart, cartItems }) => {
       </span>
 
       <div className="product__controls absolute top-4 right-4 flex flex-col gap-y-1">
-        <span className="w-[30px] h-[30px] flex items-center justify-center rounded-[50%] cursor-pointer bg-white">
+        <span
+          onClick={handleAddToWishList}
+          className="w-[30px] h-[30px] flex items-center justify-center rounded-[50%] cursor-pointer bg-white"
+        >
           <GoHeart className="text-[1.1rem]" />
         </span>
         <span className="w-[30px] h-[30px] flex items-center justify-center rounded-[50%] cursor-pointer bg-white">
@@ -94,11 +118,11 @@ const ProductCard = ({ productDetail, addToCart, cartItems }) => {
       )}
 
       <div
-        className={`absolute bg-white px-[.4rem] py-2 rounded-[50px] flex items-center justify-center w-[150px] top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] ${
+        className={`absolute bg-secondaryAccent px-[.4rem] py-2 rounded-[50px] flex items-center justify-center w-[150px] top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] ${
           showNotification ? "opacity-100" : "opacity-0"
         }`}
       >
-        <h2 className="text-[.8rem] font-[600]">Added to Cart!</h2>
+        <h2 className="text-[.8rem] font-[600] text-black">Added to Cart!</h2>
       </div>
     </div>
   );

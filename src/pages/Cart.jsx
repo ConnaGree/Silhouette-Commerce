@@ -38,7 +38,7 @@ const Cart = ({ cartItems, setCartItems }) => {
             </p>
             <h2 className="text-[1.5rem] font-[600]">Your cart is empty!</h2>
             <p className="text-[.8rem] text-center">
-              Looks like you haven't added anything to <br /> your car t yet
+              Looks like you haven't added anything to <br /> your cart yet.
             </p>
           </div>
         ) : (

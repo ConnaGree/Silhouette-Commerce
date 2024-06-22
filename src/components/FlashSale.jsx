@@ -3,7 +3,7 @@ import { GoArrowRight, GoArrowLeft } from "react-icons/go";
 import ProductCard from "./ProductCard";
 import { flashSaleProducts } from "../constants/data";
 
-const FlashSale = ({ addToCart, cartItems }) => {
+const FlashSale = ({ addToCart, cartItems, addToWishList }) => {
   const targetDate = new Date("Jul 23, 2024 18:00:00").getTime();
   const [timeLeft, setTimeLeft] = useState(calculateTimeLeft(targetDate));
 
@@ -98,6 +98,7 @@ const FlashSale = ({ addToCart, cartItems }) => {
           <ProductCard
             productDetail={product}
             addToCart={addToCart}
+            addToWishList={addToWishList}
             cartItems={cartItems}
             key={index}
           />
