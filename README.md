@@ -1,4 +1,4 @@
-**[Live Demo]**(https://silhouette-ecom.netlify.app/)
+[Live Demo]([url](https://silhouette-ecom.netlify.app/))
 This an Ecommerce Web App with add to cart, add to wishlist features,
 
 ![Screenshot 1](https://github.com/ConnaGree/Silhouette-Commerce/blob/main/localhost_5173_wishlist.png)
