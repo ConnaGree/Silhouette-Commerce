@@ -24,10 +24,29 @@ import toy_car from "./toy_car.png";
 import woman from "./woman.png";
 import laptop from "./laptop.png";
 import apple from './apple.png'
+import CameraIcon from './CameraIcon.png'
+import CellPhone from './CellPhone.png'
+import Computer from './Computer.png'
+import Headphone from './Headphone.png'
+import SmartWatch from './SmartWatch.png'
+import Gamepad from './Gamepad.png'
+
+import support from './support.png'
+import trust from './trust.png'
+import fast from './fast.png'
+import QrCode from './QrCode.png'
+import android from './android.png'
+import appstore from './appstore.png'
 
 export {
   amazon,
   apple,
+  appstore,
+  fast,
+  support,
+  trust,
+  QrCode,
+  android,
   woman,
   toy_car,
   speaker,
@@ -52,4 +71,10 @@ export {
   gucci_perfume,
   iphone,
   laptop,
+  CameraIcon,
+  Gamepad,
+  CellPhone,
+  Computer,
+  Headphone,
+  SmartWatch,
 };
